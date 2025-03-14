@@ -9,6 +9,11 @@ spring:
     username: study
     password: bitcamp!@#123
 
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false  # 개발 중에는 false로 설정하여 변경사항이 즉시 반영되도록 함
+
 #mybatis setting
 mybatis:
   type-aliases-package: data.dto
